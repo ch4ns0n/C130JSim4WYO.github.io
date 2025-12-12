@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support C-130J Simulator for Wyoming</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        textarea { width: 100%; max-width: 600px; }
+        button { padding: 10px 20px; background-color: #007bff; color: white; border: none; cursor: pointer; }
+        button:hover { background-color: #0056b3; }
+        a { display: block; margin: 10px 0; }
+        .note { font-size: 0.9em; color: #555; margin-top: 10px; }
+    </style>
+</head>
+<body>
+    <h1>Urge Wyoming Officials to Acquire a C-130J Flight Simulator</h1>
+    <p>This page helps you send a policy request to Wyoming's key officials, similar to advocacy campaigns by groups like the NRA. The goal: Support funding and approval for a C-130J and/or UH-60M simulator to boost training for the Wyoming Air National Guard's 153rd Airlift Wing, create jobs, and strengthen state readiness.</p>
+    
+    <h2>Customize and Use This Message</h2>
+    <p>Edit the text below as needed, then use the buttons/links to send.</p>
+    <textarea id="message" rows="12" cols="80">
+Dear [Official's Name],
+
+The Wyoming Air National Guard’s 153rd Airlift Wing is converting to eight C-130Js in 2028, yet Cheyenne is about to lose its legacy C-130H simulator—reportedly relocating to Little Rock AFB. Without action, Wyoming will have zero on-site C-130 training capability at the exact moment we need it most.
+
+A new C-130J full-motion simulator in Cheyenne would:
+
+- End costly TDY trips to Arkansas ($3,500–$5,000 per airman)
+
+- Cut training costs 60–70% while dramatically increasing readiness
+
+- Serve Wyoming, Montana (120th AW), Minnesota (133rd AW), Colorado (140th/302nd Wings), and active-duty units at Dyess—freeing overloaded schoolhouse simulators at Little Rock
+
+Additionally, the same facility could host a UH-60M Black Hawk simulator for the Wyoming Army National Guard, creating a true Joint Aircrew Training Center of Excellence for the entire state.
+
+Please:
+
+- Appropriate $2–3M in state matching funds for site preparation
+
+- Work with our congressional delegation to place the Cheyenne C-130J (and optional UH-60M) simulator on the FY27 NDAA unfunded priorities list
+
+- Let’s keep Wyoming’s airmen and soldiers training at home instead of sending them—and their simulators—out of state.
+
+Thank you for supporting our Guard.
+    </textarea>
+    
+    <h2>Contact the Officials</h2>
+ <p><strong>Governor Mark Gordon:</strong> Copy the message above, click the link to open their official contact forms, and paste it in.</p>
+<a href="https://governor.wyo.gov/contact/governor" target="_blank">Contact Governor Mark Gordon</a>
+
+   
+    <p><strong>U.S. Senators and Representative:</strong> Copy the message above, click the links to open their official contact forms, and paste it in.</p>
+    <a href="https://www.barrasso.senate.gov/contact/contact-form/" target="_blank">Contact Senator John Barrasso</a>
+    <a href="https://www.lummis.senate.gov/contact/contact-form/" target="_blank">Contact Senator Cynthia Lummis</a>
+    <a href="https://hageman.house.gov/contact" target="_blank">Contact Representative Harriet Hageman</a>
+    
+    <script>
+        function sendEmail(email, officialName) {
+            var message = document.getElementById("message").value.replace('[Official\'s Name]', officialName);
+            var subject = "Policy Request: Support Acquiring C-130J Flight Simulator for Wyoming";
+            window.location.href = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(message)}`;
+        }
+    </script>
+</body>
+</html>

@@ -11,6 +11,7 @@
         button:hover { background-color: #0056b3; }
         a { display: block; margin: 10px 0; }
         .note { font-size: 0.9em; color: #555; margin-top: 10px; }
+        .counter { text-align: center; margin: 40px 0 20px; font-size: 0.9em; color: #666; }
     </style>
 </head>
 <body>
@@ -46,10 +47,9 @@ Thank you for supporting our Guard.
     </textarea>
     
     <h2>Contact the Officials</h2>
- <p><strong>Governor Mark Gordon:</strong> Copy the message above, click the link to open their official contact forms, and paste it in.</p>
-<a href="https://governor.wyo.gov/contact/governor" target="_blank">Contact Governor Mark Gordon</a>
+    <p><strong>Governor Mark Gordon:</strong> Copy the message above, click the link to open their official contact forms, and paste it in.</p>
+    <a href="https://governor.wyo.gov/contact/governor" target="_blank">Contact Governor Mark Gordon</a>
 
-   
     <p><strong>U.S. Senators and Representative:</strong> Copy the message above, click the links to open their official contact forms, and paste it in.</p>
     <a href="https://www.barrasso.senate.gov/contact/contact-form/" target="_blank">Contact Senator John Barrasso</a>
     <a href="https://www.lummis.senate.gov/contact/contact-form/" target="_blank">Contact Senator Cynthia Lummis</a>
@@ -62,5 +62,24 @@ Thank you for supporting our Guard.
             window.location.href = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(message)}`;
         }
     </script>
+
+    <!-- Visitor Counter -->
+    <div class="counter">
+        <p>Page Visits:</p>
+        <!-- Default Statcounter code for The guy https://ch4ns0n.github.io/C130JSim4WYO.github.io/ -->
+        <script type="text/javascript">
+        var sc_project=13193124; 
+        var sc_invisible=0; 
+        var sc_security="6ee07d63"; 
+        var scJsHost = "https://";
+        document.write("<sc"+"ript type='text/javascript' src='" + scJsHost+
+        "statcounter.com/counter/counter.js'></"+"script>");
+        </script>
+        <noscript><div class="statcounter"><a title="website statistics"
+        href="https://statcounter.com/" target="_blank"><img class="statcounter"
+        src="https://c.statcounter.com/13193124/0/6ee07d63/0/" alt="website statistics"
+        referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
+        <!-- End of Statcounter Code -->
+    </div>
 </body>
 </html>
